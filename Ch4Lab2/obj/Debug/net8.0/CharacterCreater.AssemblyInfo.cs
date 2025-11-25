@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CharacterCreater")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66ec7c9d4ebd5a46228e8ed96691766b50901cf3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c53fa6b230bbf1690ad83973b2d099c4df35df5")]
 [assembly: System.Reflection.AssemblyProductAttribute("CharacterCreater")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CharacterCreater")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using LordsOfTheFallenCharacterCreation.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ch4Lab2.Controllers
 {
@@ -16,7 +17,11 @@ namespace Ch4Lab2.Controllers
 
         public IActionResult Index()
         {
-            List<Character> characters = Context.Characters.OrderBy(c => c.LastName).ToList();
+            List<Character> characters = Context.Characters
+                .Include(m => m.Class )
+                .Include(m => m.Ancestry)
+                .OrderBy(c => c.LastName)
+                .ToList();
             return View(characters);
         }//end method
     }//end class
