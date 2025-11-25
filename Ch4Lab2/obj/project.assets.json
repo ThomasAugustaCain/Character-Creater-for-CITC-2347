@@ -4005,23 +4005,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tacain\\.nuget\\packages\\": {},
+    "C:\\Users\\TAugu\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tacain\\OneDrive - Walters State Community College\\Web Database Application Development\\Ch4Lab2\\Ch4Lab2\\CharacterCreater.csproj",
+      "projectUniqueName": "C:\\Users\\TAugu\\OneDrive - Walters State Community College\\Web Database Application Development\\Ch4Lab2\\Ch4Lab2\\CharacterCreater.csproj",
       "projectName": "CharacterCreater",
-      "projectPath": "C:\\Users\\tacain\\OneDrive - Walters State Community College\\Web Database Application Development\\Ch4Lab2\\Ch4Lab2\\CharacterCreater.csproj",
-      "packagesPath": "C:\\Users\\tacain\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tacain\\OneDrive - Walters State Community College\\Web Database Application Development\\Ch4Lab2\\Ch4Lab2\\obj\\",
+      "projectPath": "C:\\Users\\TAugu\\OneDrive - Walters State Community College\\Web Database Application Development\\Ch4Lab2\\Ch4Lab2\\CharacterCreater.csproj",
+      "packagesPath": "C:\\Users\\TAugu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TAugu\\OneDrive - Walters State Community College\\Web Database Application Development\\Ch4Lab2\\Ch4Lab2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tacain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TAugu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4048,7 +4048,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -4084,7 +4084,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
