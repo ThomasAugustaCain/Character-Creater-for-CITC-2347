@@ -1,4 +1,4 @@
-using Ch4Lab2.Models;
+using LordsOfTheFallenCharacterCreation.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

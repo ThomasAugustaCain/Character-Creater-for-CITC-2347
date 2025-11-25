@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using Ch4Lab2.Models;
+using LordsOfTheFallenCharacterCreation.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ch4Lab2.Controllers

@@ -1,0 +1,9 @@
+C:\Users\tacain\OneDrive - Walters State Community College\Web Database Application Development\Ch4Lab2\Ch4Lab2\obj\Debug\net8.0\CharacterCreater.csproj.AssemblyReference.cache
+C:\Users\tacain\OneDrive - Walters State Community College\Web Database Application Development\Ch4Lab2\Ch4Lab2\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\tacain\OneDrive - Walters State Community College\Web Database Application Development\Ch4Lab2\Ch4Lab2\obj\Debug\net8.0\CharacterCreater.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tacain\OneDrive - Walters State Community College\Web Database Application Development\Ch4Lab2\Ch4Lab2\obj\Debug\net8.0\CharacterCreater.AssemblyInfoInputs.cache
+C:\Users\tacain\OneDrive - Walters State Community College\Web Database Application Development\Ch4Lab2\Ch4Lab2\obj\Debug\net8.0\CharacterCreater.AssemblyInfo.cs
+C:\Users\tacain\OneDrive - Walters State Community College\Web Database Application Development\Ch4Lab2\Ch4Lab2\obj\Debug\net8.0\CharacterCreater.csproj.CoreCompileInputs.cache
+C:\Users\tacain\OneDrive - Walters State Community College\Web Database Application Development\Ch4Lab2\Ch4Lab2\obj\Debug\net8.0\CharacterCreater.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tacain\OneDrive - Walters State Community College\Web Database Application Development\Ch4Lab2\Ch4Lab2\obj\Debug\net8.0\CharacterCreater.RazorAssemblyInfo.cache
+C:\Users\tacain\OneDrive - Walters State Community College\Web Database Application Development\Ch4Lab2\Ch4Lab2\obj\Debug\net8.0\CharacterCreater.RazorAssemblyInfo.cs
