@@ -15,8 +15,14 @@ namespace LordsOfTheFallenCharacterCreation.Models
         [Required(ErrorMessage = "Please enter a last name")]
         public string LastName { get; set; } = string.Empty;
 
+        [Required(ErrorMessage = "Please enter a Class")]
+        public int? ClassId { get; set; }
+
         [ValidateNever]
         public Class Class { get; set; } = null!;
+
+        [Required(ErrorMessage = "Please enter an Ancestry")]
+        public int? AncestryId { get; set; }
 
         [ValidateNever]
         public Ancestry Ancestry { get; set; } = null!;
