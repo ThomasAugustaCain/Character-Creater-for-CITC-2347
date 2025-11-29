@@ -1,0 +1,16 @@
+﻿@model Character
+@{
+    ViewData["Title"] = "Character Movie";
+}
+
+<h2>Confirm Deletion</h2>
+<h3>@Model.FirstName @Model.LastName (@Model.Level)</h3>
+
+<form asp-action="Delete" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="hidden" asp-for="CharacterId" />
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-controller="Character" asp-route-id="CharacterId" asp-action="Index"
+       class="btn btn-secondary">Cancel</a>
+</form>

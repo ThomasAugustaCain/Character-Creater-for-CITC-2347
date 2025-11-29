@@ -1,0 +1,67 @@
+﻿@model Character
+@{
+    ViewData["Title"] = "Character stats";
+}
+
+
+<div class="mb-2 btn-group">
+    <a asp-controller="Character"
+    asp-route-id="@Model.CharacterId" asp-action="Edit"
+       class="btn btn-primary">Edit</a>
+    <a asp-controller="Character" asp-route-id="@Model.CharacterId" 
+    asp-action="Delete"
+       class="btn btn-danger">Delete</a>
+    <a asp-controller="Home" asp-action="Index"
+       class="btn btn-secondary">Back</a>
+</div>
+
+<div class="mb-3">  
+        <div class="form-control text-center fs-4" style="background-color: #e9ecef;">
+            @Model.FirstName @Model.LastName
+        </div>
+</div>
+<div class="row">
+    <div class="col-sm">
+        <label class="form-label">Class</label>
+        <div class="form-control text-center fs-4" style="background-color: #e9ecef;">@Model.Class.Name</div>
+        <label class="form-label">Ancestry</label>
+        <div class="form-control text-center fs-4" style="background-color: #e9ecef;">@Model.Ancestry.AncestryName</div>
+        <label class="form-label">Level</label>
+        <div class="form-control text-center fs-4" style="background-color: #e9ecef;">@Model.Level</div>
+    </div>
+    <div class="col-sm">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Stats</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Strength</td>
+                    <td>@Model.Class.InitalStrength</td>
+                </tr>
+                <tr>
+                    <td>Agility</td>
+                    <td>@Model.Agility</td>
+                </tr>
+                <tr>
+                    <td>Endurance</td>
+                    <td>@Model.Endurance</td>
+                </tr>
+                <tr>
+                    <td>Vitality</td>
+                    <td>@Model.Vitality</td>
+                </tr>
+                <tr>
+                    <td>Radiance</td>
+                    <td>@Model.Radiance</td>
+                </tr>
+                <tr>
+                    <td>Inferno</td>
+                    <td>@Model.Inferno</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

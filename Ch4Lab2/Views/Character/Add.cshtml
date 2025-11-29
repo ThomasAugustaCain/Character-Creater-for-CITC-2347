@@ -1,0 +1,86 @@
+﻿@model Character
+@{
+    ViewData["Title"] = "Add Character"; ;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<form asp-action="Add" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="FirstName" class="form-label">First Name</label>
+        <input asp-for="FirstName" class="form-control" />
+        <label asp-for="LastName" class="form-label">Last Name</label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <label asp-for="ClassId" class="form-label" onchange="this.form.submit()">Class</label>
+            <select asp-for="ClassId" class="form-select">
+                <option value="">Select a class</option>
+                @foreach (Class c in ViewBag.Classes)
+                {
+                    <option value="@c.ClassId">@c.Name</option>
+                }
+            </select>
+            <label asp-for="AncestryId" class="form-label">Ancestry</label>
+            <select asp-for="AncestryId" class="form-select">
+                <option value="">Select an Ancestry</option>
+                @foreach (Ancestry a in ViewBag.Ancestrys)
+                {
+                    <option value="@a.AncestryId">@a.AncestryName</option>
+                }
+            </select>
+            <label asp-for="Level" class="form-label">Level</label>
+            <input asp-for="Level" class="form-control" />
+        </div>
+        <input type="hidden" asp-for="CharacterId" />
+        <br />
+        <div class="col-sm">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Stats</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Strength</td>
+                        <td>
+                            <input asp-for="Strength" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agility</td>
+                        <td><input asp-for="Agility" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Endurance</td>
+                        <td><input asp-for="Endurance" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Vitality</td>
+                        <td><input asp-for="Vitality" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Radiance</td>
+                        <td><input asp-for="Radiance" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Inferno</td>
+                        <td><input asp-for="Inferno" class="form-control" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a asp-controller="Home" asp-action="Index"
+                   class="btn btn-secondary">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+</form>
