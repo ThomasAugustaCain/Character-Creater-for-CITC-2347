@@ -10,7 +10,7 @@ namespace LordsOfTheFallenCharacterCreation.Models
         { }
 
         public DbSet<Character> Characters { get; set; } = null!;
-        public DbSet<Ancestry> Acestrys { get; set; } = null!;
+        public DbSet<Ancestry> Ancestrys { get; set; } = null!;
         public DbSet<Class> Classes { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
