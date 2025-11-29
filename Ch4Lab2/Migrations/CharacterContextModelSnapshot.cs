@@ -36,7 +36,7 @@ namespace CharacterCreater.Migrations
 
                     b.HasKey("AncestryId");
 
-                    b.ToTable("Acestrys");
+                    b.ToTable("Ancestrys");
 
                     b.HasData(
                         new
@@ -339,13 +339,13 @@ namespace CharacterCreater.Migrations
                     b.HasOne("LordsOfTheFallenCharacterCreation.Models.Ancestry", "Ancestry")
                         .WithMany()
                         .HasForeignKey("AncestryId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("LordsOfTheFallenCharacterCreation.Models.Class", "Class")
                         .WithMany()
                         .HasForeignKey("ClassId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Ancestry");

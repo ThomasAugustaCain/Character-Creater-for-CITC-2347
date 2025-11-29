@@ -31,10 +31,8 @@
                     <td>@character.Ancestry.AncestryName</td>
                     <td>@character.Level</td>
                     <td>
-                        <div class="btn-group">
-                            <a asp-action="Stats" asp-route-id="@character.CharacterId" class="btn btn-info">View Stats</a>
-                            <a asp-action="Edit" asp-route-id="@character.CharacterId" class="btn btn-primary">Edit</a>
-                            <a asp-action="Delete" asp-route-id="@character.CharacterId" class="btn btn-danger">Delete</a>
+                        <div>
+                            <a asp-controller="Character" asp-action="Details" asp-route-id="@character.CharacterId" class="btn btn-info">View Stats</a>
                         </div>
                      </td>
             </tr>
