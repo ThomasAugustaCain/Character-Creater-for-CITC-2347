@@ -8,7 +8,6 @@
 
 <form asp-action="Add" method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
-
     <div class="mb-3">
         <label asp-for="FirstName" class="form-label">First Name</label>
         <input asp-for="FirstName" class="form-control" />
@@ -17,7 +16,7 @@
     </div>
     <div class="row">
         <div class="col-sm">
-            <label asp-for="ClassId" class="form-label" onchange="this.form.submit()">Class</label>
+            <label asp-for="ClassId" class="form-label">Class</label>
             <select asp-for="ClassId" class="form-select">
                 <option value="">Select a class</option>
                 @foreach (Class c in ViewBag.Classes)
@@ -25,6 +24,24 @@
                     <option value="@c.ClassId">@c.Name</option>
                 }
             </select>
+
+            @{
+                Class selectedClass = null;
+
+                if (Model != null && Model.ClassId != null)
+                {
+                    foreach (Class c in ViewBag.Classes)
+                    {
+                        if (c.ClassId == Model.ClassId)
+                        {
+                            selectedClass = c;
+                            break;
+                        }
+                    }
+                }
+            }
+
+
             <label asp-for="AncestryId" class="form-label">Ancestry</label>
             <select asp-for="AncestryId" class="form-select">
                 <option value="">Select an Ancestry</option>
@@ -54,7 +71,7 @@
                     </tr>
                     <tr>
                         <td>Agility</td>
-                        <td><input asp-for="Agility" class="form-control" /></td>
+                        <td>@selectedClass?.InitalAgility</td>
                     </tr>
                     <tr>
                         <td>Endurance</td>
